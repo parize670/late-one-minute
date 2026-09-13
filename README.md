@@ -2,33 +2,40 @@
 
 60 秒出门倒计时小游戏。你被时间诅咒了：无论计划几点出门，真实只剩 60 秒。
 
+## 怎么玩（Day 1 一局）
+
+```bat
+cd /d D:\late-one-minute
+npm install
+npm run dev
+```
+
+浏览器打开终端里给出的本地地址，然后：
+
+1. 点 **开始上班**
+2. 任务卡上点 **只剩 60 秒**（或等约 2 秒自动进房）
+3. 房间里对着热区动手，倒计时一直在左上角：
+   - **闹钟**：连点三次，或划开
+   - **鞋**：把两只鞋拖到门口鞋垫上（穿反也算完成，结算会记一笔）
+   - **工牌**：把猫拖开（或点两下），再点工牌。猫会再跳回来一次
+   - **门**：点门出门。没拿工牌时第一次会弹开，再点一次也能冲出去
+4. 电梯里 **连点画面** 往里挤，门合上前把进度条打满
+5. 结算看 **卡点 / 晚一点 / 没赶上**，以及跳过动作留下的标签。点 **再来一次** 重开
+
+跳过任何家务都可以出门，但会改结局标签。零点还站在房间里会直接「没赶上」。
+
 ## 协作工具
 
 | 工具 | 职责 |
 |---|---|
 | **Grok Bot** | 产品经理：文案、关卡表、结局、Issue、验收 |
-| **Grok Build** | 主程序：本地 `D:\\late-one-minute` 里写代码、跑游戏、提交 |
+| **Grok Build** | 主程序：本地 `D:\late-one-minute` 里写代码、跑游戏、提交 |
 | **Codex** | 技术主管：架构、测试、Playwright 试玩、修 bug、代码审查 |
 
 详细规则见 `AGENTS.md`。  
 玩法见 `docs/GAME_DESIGN.md`。  
+Day 1 文案表见 `docs/content/day1.json`。  
 三份可直接粘贴的提示词见 `docs/PROMPTS.md`。
-
-## 本地（Windows D 盘）
-
-```bat
-D:
-mkdir D:\late-one-minute
-cd /d D:\late-one-minute
-git clone https://github.com/parize670/late-one-minute.git .
-```
-
-代码就绪后：
-
-```bat
-npm install
-npm run dev
-```
 
 ## 目标栈
 
