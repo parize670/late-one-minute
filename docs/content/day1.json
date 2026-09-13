@@ -21,27 +21,26 @@
     "start": "开始上班",
     "briefKicker": "Day 1",
     "briefCta": "只剩 60 秒",
-    "briefLine": "例会 9:00。现在 8:59。你知道的。",
+    "briefLine": "闹钟响了。你还有六十秒。别问为什么永远是六十秒。",
     "timerLabel": "出门倒计时",
     "mash": "连点，挤进去",
     "mashHint": "门在关",
     "again": "再来一次",
     "latePrefix": "晚了",
-    "earlyPrefix": "提前",
     "seconds": "秒",
     "onTheDot": "刚好卡上",
     "endings": {
       "onTime": {
         "label": "卡点",
-        "line": "你卡着点儿挤进去。没人表扬，但至少没点名。"
+        "line": "你踩着最后一秒冲进会议室。没人鼓掌，但诅咒暂时闭嘴了。"
       },
       "aBitLate": {
         "label": "晚一点",
-        "line": "晚了一点。群里已经在问你人呢。"
+        "line": "只晚了一点点。会议室里的沉默比闹钟更响。"
       },
       "missed": {
         "label": "没赶上",
-        "line": "电梯门合上了。你看着楼层数字往上跳。周一，如期而至。"
+        "line": "电梯走了，你还在。六十秒用完了，羞辱可以收藏。"
       }
     },
     "tags": {
@@ -58,34 +57,27 @@
       "alarmTap1": "还在响。",
       "alarmTap2": "再一下。",
       "alarmOff": "终于安静了。",
-      "alarmSwipe": "扫下去了。",
-      "catOnce": "它看了你一眼。",
+      "alarmSwipe": "闹钟滑到床底去了。你现在是在和家具谈判。",
+      "catOnce": "它看了你一眼。它有的是时间，你没有。",
       "catMoved": "让开了。暂时。",
-      "catBack": "它又坐回去了。",
+      "catBack": "猫又坐回去了。它有的是时间，你没有。",
       "badgeTaken": "工牌是凉的。",
       "badgeBlocked": "工牌在猫底下。",
       "shoeOne": "一只。",
       "shoesOn": "鞋在脚上。跑。",
       "shoesSwapped": "左右反了。不管了。",
-      "doorNoBadge": "没带工牌。门又弹开。",
+      "doorNoBadge": "门又开了。工牌还在家里跟猫作伴。",
       "doorLocked": "锁上了。别回头。",
       "doorRush": "没锁。随它去。",
-      "timeZero": "还站着。门不会自己开。",
-      "elevatorOk": "挤进去了。",
-      "elevatorFail": "门夹到包了。"
+      "timeZero": "还站着。门不会自己开。"
     },
     "recap": {
-      "alarmOk": "闹钟按掉了",
+      "alarmOk": "闹钟认输",
       "alarmFail": "闹钟滑进床底",
-      "shoesOk": "鞋穿上了",
-      "shoesSwap": "左右穿反",
-      "shoesFail": "光着脚",
       "badgeOk": "工牌在脖子上",
       "badgeFail": "工牌没拿",
-      "lockOk": "门锁了",
-      "lockFail": "门没锁",
-      "elevOk": "挤进电梯",
-      "elevFail": "没挤上去"
+      "elevOk": "电梯门差一点点",
+      "elevFail": "门关上了"
     }
   }
 }

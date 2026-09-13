@@ -107,7 +107,7 @@ export function mountGame(host: HTMLElement): () => void {
 
   const frame = (now: number): void => {
     if (!running) return;
-    const dt = Math.min(0.1, (now - last) / 1000);
+    const dt = Math.max(0, (now - last) / 1000);
     last = now;
     step(state, dt);
     audio.tickAlarm(dt, state.phase === "room" && state.alarmOn);

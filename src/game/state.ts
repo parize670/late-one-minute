@@ -1,4 +1,4 @@
-import { day1 } from "./content";
+import { day1, type FlavorKey, type TagKey } from "./content";
 import { ROOM } from "./layout";
 import type { EndingId, GameState } from "./types";
 
@@ -52,14 +52,14 @@ export function createState(): GameState {
   };
 }
 
-export function say(state: GameState, key: string): void {
+export function say(state: GameState, key: FlavorKey): void {
   const line = day1.copy.flavor[key];
   if (!line) return;
   state.flavor = line;
   state.flavorT = 2.4;
 }
 
-export function addTag(state: GameState, key: string): void {
+export function addTag(state: GameState, key: TagKey): void {
   const label = day1.copy.tags[key];
   if (!label) return;
   if (!state.tags.includes(label)) state.tags.push(label);

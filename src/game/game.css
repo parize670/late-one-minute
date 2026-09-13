@@ -30,6 +30,10 @@ body {
   color: var(--lom-fg);
 }
 
+[hidden] {
+  display: none !important;
+}
+
 .lom-host {
   position: relative;
   width: 100%;

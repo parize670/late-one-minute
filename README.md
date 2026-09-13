@@ -4,9 +4,10 @@
 
 ## 怎么玩（Day 1 一局）
 
-```bat
-cd /d D:\late-one-minute
+```powershell
+Set-Location D:\late-one-minute
 npm install
+npx playwright install chromium
 npm run dev
 ```
 
@@ -23,6 +24,12 @@ npm run dev
 5. 结算看 **卡点 / 晚一点 / 没赶上**，以及跳过动作留下的标签。点 **再来一次** 重开
 
 跳过任何家务都可以出门，但会改结局标签。零点还站在房间里会直接「没赶上」。
+
+提交前可运行桌面与手机视口的 smoke 试玩：
+
+```powershell
+npm run test:smoke
+```
 
 ## 协作工具
 

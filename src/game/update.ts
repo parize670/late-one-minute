@@ -131,7 +131,8 @@ export function startRoom(state: GameState): void {
 }
 
 export function step(state: GameState, dt: number): void {
-  const d = Math.min(dt, 0.1);
+  const elapsed = Math.max(0, dt);
+  const d = Math.min(elapsed, 0.1);
   state.hintT += d;
   if (state.flavorT > 0) state.flavorT -= d;
 
@@ -141,7 +142,7 @@ export function step(state: GameState, dt: number): void {
   }
 
   if (state.clockOn && (state.phase === "room" || state.phase === "lastMile")) {
-    state.timeLeft -= d;
+    state.timeLeft -= elapsed;
   }
 
   state.shake = Math.max(0, state.shake - d * 2.4);
