@@ -1,0 +1,83 @@
+{
+  "id": "day1",
+  "title": "周一例会",
+  "destination": "公司 3 楼会议室",
+  "when": "9:00",
+  "now": "8:59",
+  "roomSeconds": 60,
+  "lastMileSeconds": 18,
+  "lateWindow": 20,
+  "standStillLimit": 15,
+  "chores": [
+    { "id": "alarm", "label": "关闹钟" },
+    { "id": "shoes", "label": "穿鞋" },
+    { "id": "badge", "label": "拿工牌" },
+    { "id": "lock", "label": "锁门" },
+    { "id": "elevator", "label": "进电梯" }
+  ],
+  "copy": {
+    "gameTitle": "迟到一分钟",
+    "tagline": "无论你几点出门，永远只剩 60 秒。",
+    "start": "开始上班",
+    "briefKicker": "Day 1",
+    "briefCta": "只剩 60 秒",
+    "briefLine": "闹钟响了。你还有六十秒。别问为什么永远是六十秒。",
+    "timerLabel": "出门倒计时",
+    "mash": "连点，挤进去",
+    "mashHint": "门在关",
+    "again": "再来一次",
+    "latePrefix": "晚了",
+    "seconds": "秒",
+    "onTheDot": "刚好卡上",
+    "endings": {
+      "onTime": {
+        "label": "卡点",
+        "line": "你踩着最后一秒冲进会议室。没人鼓掌，但诅咒暂时闭嘴了。"
+      },
+      "aBitLate": {
+        "label": "晚一点",
+        "line": "只晚了一点点。会议室里的沉默比闹钟更响。"
+      },
+      "missed": {
+        "label": "没赶上",
+        "line": "电梯走了，你还在。六十秒用完了，羞辱可以收藏。"
+      }
+    },
+    "tags": {
+      "alarmSkipped": "闹钟还在床底下响",
+      "shoesSkipped": "光脚进的电梯",
+      "shoesSwapped": "左右脚穿反了",
+      "badgeSkipped": "工牌还在猫身下",
+      "catHopped": "猫又坐回去了一次",
+      "doorUnlocked": "门没锁",
+      "bagCaught": "包被电梯门咬了一口",
+      "stoodStill": "零点还站在家里"
+    },
+    "flavor": {
+      "alarmTap1": "还在响。",
+      "alarmTap2": "再一下。",
+      "alarmOff": "终于安静了。",
+      "alarmSwipe": "闹钟滑到床底去了。你现在是在和家具谈判。",
+      "catOnce": "它看了你一眼。它有的是时间，你没有。",
+      "catMoved": "让开了。暂时。",
+      "catBack": "猫又坐回去了。它有的是时间，你没有。",
+      "badgeTaken": "工牌是凉的。",
+      "badgeBlocked": "工牌在猫底下。",
+      "shoeOne": "一只。",
+      "shoesOn": "鞋在脚上。跑。",
+      "shoesSwapped": "左右反了。不管了。",
+      "doorNoBadge": "门又开了。工牌还在家里跟猫作伴。",
+      "doorLocked": "锁上了。别回头。",
+      "doorRush": "没锁。随它去。",
+      "timeZero": "还站着。门不会自己开。"
+    },
+    "recap": {
+      "alarmOk": "闹钟认输",
+      "alarmFail": "闹钟滑进床底",
+      "badgeOk": "工牌在脖子上",
+      "badgeFail": "工牌没拿",
+      "elevOk": "电梯门差一点点",
+      "elevFail": "门关上了"
+    }
+  }
+}
